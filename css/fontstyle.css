@@ -52,9 +52,6 @@
 .icon-code:before {
 	content: "\e607";
 }
-	.icon-code:hover {
-		color: #6C7A89;
-	}
 
 .icon-css:before {
 	content: "\e608";
@@ -65,9 +62,6 @@
 .icon-design:before {
 	content: "\e60a";
 }
-	.icon-design:hover {
-		color: #8E44AD;
-	}
 
 .icon-doc:before {
 	content: "\e60b";
@@ -75,9 +69,6 @@
 .icon-fun:before {
 	content: "\e60c";
 }
-	.icon-fun:hover{
-		color: #F62459;
-	}
 
 .icon-heart:before {
 	color: red;

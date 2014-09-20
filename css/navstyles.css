@@ -84,7 +84,6 @@ section {
 }
 
 .nav-collapse li {
-  background-color: #fff;
   float: right;
   width: 100%;
 }
@@ -151,6 +150,8 @@ section {
   .nav-collapse ul {
     padding:0;
     width: 100%;
+    z-index: 10000;
+    background-color: #fff;
 }
 }
 /* ------------------------------------------
@@ -168,7 +169,7 @@ section {
   font-style: normal;
 }
 
-.nav-toggle {
+.nav-toggle, .nav-toggle.active {
   position: fixed;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -209,7 +210,8 @@ section {
   font-family: Lato, sans-serif;
   font-size: 36px;
   content:"x";
-  font-weight: 100;
+  font-weight: 900;
+  z-index: 10000;
 }
 
 
