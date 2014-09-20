@@ -1,0 +1,172 @@
+.work-grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 3em 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.work-grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 33.333%;
+	height: 400px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.work-grid figure img {
+	position: relative;
+	display: block;
+	min-height: 400px;
+	opacity: 0.8;
+}
+
+.work-grid figure figcaption {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.work-grid figure figcaption::before,
+.work-grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.work-grid figure figcaption,
+.work-grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.work-grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.work-grid figure h3 {
+	word-spacing: -0.15em;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.work-grid figure h3 span {
+	font-weight: 800;
+}
+
+.work-grid figure h3,
+.work-grid figure p {
+	margin: 0;
+}
+
+.work-grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-bubba {
+	background: #9e5406;
+}
+
+figure.effect-bubba img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h3 {
+	padding-top: 30%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h3,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media screen and (max-width: 69.5em) {
+	.work-grid figure {
+		width: 50%;
+	}	
+
+	.work-grid figure figcaption {
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (max-width: 41.5em) {
+
+	.work-grid figure {
+		width: 100%;
+	}
+}
+

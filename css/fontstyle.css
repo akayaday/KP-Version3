@@ -1,0 +1,120 @@
+@font-face {
+	font-family: 'kp-icons';
+	src:url('fonts/kp-icons.eot?lpm3u5');
+	src:url('fonts/kp-icons.eot?#iefixlpm3u5') format('embedded-opentype'),
+		url('fonts/kp-icons.woff?lpm3u5') format('woff'),
+		url('fonts/kp-icons.ttf?lpm3u5') format('truetype'),
+		url('fonts/kp-icons.svg?lpm3u5#kp-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'kp-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size: 60px;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fashion:before {
+	content: "\e600";
+}
+.icon-jq:before {
+	content: "\e601";
+}
+.icon-AfterEffects:before {
+	content: "\e602";
+}
+.icon-airplane:before {
+	content: "\e603";
+}
+	.icon-airplane:hover {
+		color: #3A539B;
+	}
+
+.icon-android:before {
+	content: "\e604";
+}
+.icon-autocad:before {
+	content: "\e605";
+}
+.icon-camera:before {
+	content: "\e606";
+}
+.icon-code:before {
+	content: "\e607";
+}
+	.icon-code:hover {
+		color: #6C7A89;
+	}
+
+.icon-css:before {
+	content: "\e608";
+}
+.icon-dance:before {
+	content: "\e609";
+}
+.icon-design:before {
+	content: "\e60a";
+}
+	.icon-design:hover {
+		color: #8E44AD;
+	}
+
+.icon-doc:before {
+	content: "\e60b";
+}
+.icon-fun:before {
+	content: "\e60c";
+}
+	.icon-fun:hover{
+		color: #F62459;
+	}
+
+.icon-heart:before {
+	color: red;
+	font-size: 40px;
+	content: "\e60d";
+}
+.icon-html:before {
+	content: "\e60e";
+}
+.icon-Illustrator:before {
+	content: "\e60f";
+}
+.icon-Indesign:before {
+	content: "\e610";
+}
+.icon-js:before {
+	content: "\e611";
+}
+.icon-Lightroom:before {
+	content: "\e612";
+}
+.icon-movies:before {
+	content: "\e613";
+}
+.icon-music:before {
+	content: "\e614";
+}
+.icon-Photoshop:before {
+	content: "\e615";
+}
+.icon-Premiere:before {
+	content: "\e616";
+}
+.icon-volunteer:before {
+	content: "\e617";
+}
+.icon-windows:before {
+	font-size: 50px;
+	content: "\e618";
+}

@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+/* ------------------------------------------
+  RESET
+--------------------------------------------- */
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+summary, hgroup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+/* ------------------------------------------
+  BASE DEMO STYLES
+--------------------------------------------- */
+
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #37302a;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
+}
+
+section {
+  float: left;
+  width: 100%;
+}
+
+
+/* ------------------------------------------
+  NAVIGATION STYLES
+  (+ responsive-nav.css file is loaded in the <head>)
+--------------------------------------------- */
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-Item {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 100;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-collapse,
+.nav-collapse * {
+  z-index: 20;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  float: right;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.nav-collapse li {
+  background-color: #fff;
+  float: right;
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-collapse,
+  .nav-collapse ul {
+  list-style: none;
+  width: 80%;
+}
+  .nav-collapse li {
+    width: 120px;
+    margin-right: 40px;
+    *width: 24.9%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
+}
+
+.nav-collapse a {
+  text-decoration: none;
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #e9e9e9;
+  margin-right: 20px;
+  padding: 1em;
+  float: left;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-collapse a {
+    padding: 0.75em;
+    height: 50px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: all 0.4s, font-weight 0.1s;
+    -moz-transition: all 0.4s font-weight 0.1s;
+    transition: all 0.4s font-weight 0.1s;
+  }
+
+  .nav-collapse a:hover {
+    color: #eeb301;
+    font-weight: 400;
+    border: 1px solid black;
+  }
+}
+
+.nav-collapse ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+@media screen and (min-width: 640px) {
+  .nav-collapse ul ul a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-collapse,
+  .nav-collapse ul {
+    padding:0;
+    width: 100%;
+}
+}
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
+
+@font-face {
+  font-family: "responsivenav";
+  src:url("../icons/responsivenav.eot");
+  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("../icons/responsivenav.ttf") format("truetype"),
+    url("../icons/responsivenav.woff") format("woff"),
+    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.nav-toggle {
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  text-indent: -999px;
+  position: relative;
+  overflow: hidden;
+  width: 70px;
+  height: 55px;
+  float: right;
+}
+
+.nav-toggle:before {
+  color: #f4421a; /* Edit this to change the icon color */
+  font-family: "responsivenav", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 18px;
+  text-transform: none;
+  position: absolute;
+  content: "≡";
+  text-indent: 0;
+  text-align: center;
+  line-height: 55px;
+  speak: none;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-toggle.active::before {
+  font-family: Lato, sans-serif;
+  font-size: 36px;
+  content:"x";
+  font-weight: 100;
+}
+
+
+
+
+
