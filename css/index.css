@@ -65,7 +65,7 @@ hr {
 	position: absolute;
 	margin-left: 110px;
 	margin-top: 25px;
-	opacity: 0.8;
+	opacity: 0.7;
 	-webkit-transition: all 0.2s;
   	-moz-transition: all 0.2s;
   	transition: all 0.2s;
@@ -222,6 +222,12 @@ hr {
 	overflow: hidden;
 }
 
-
+footer {
+	background-image: url('../img/mainBack.jpg');
+	background-size: cover;
+	background-position: 0px -150px;
+	background-repeat: no-repeat;
+	height:200px;
+}
 
 
