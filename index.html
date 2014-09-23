@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/navstyles.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/fontstyle.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 	<script type="text/javascript" src="js/responsive-nav.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>\
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 	<script type="text/javascript">
 	</script>
 </head>
@@ -21,8 +21,8 @@
 		<header class="nav-bar">
 			<nav class="nav-collapse">
 				<ul>
-					<li><a class="nav-Item" href="#">Contact</a></li>
-					<li><a class="nav-Item" href="#">Work</a></li>
+					<li><a class="nav-Item smoothScroll" href="#bottom">Contact</a></li>
+					<li><a class="nav-Item smoothScroll" href="#work">Work</a></li>
 					<li><a class="nav-Item" href="AKP_Resume2014.pdf">Résumé</a></li>
 				</ul>
 			</nav>
@@ -44,8 +44,8 @@
 			</nav>
 			<h2 class="tab-Title">I&nbsp;&nbsp;&nbsp;<span class="icon-heart">&nbsp;</span><span id="current-Tab"></span></h2>
 
-			<section class="content design">
-				<div class="grid-toolset">
+			<section  class="content design">
+				<div class="toolset-grid">
      				<figure class="col-1-4 icon-Photoshop">
      					<figcaption class="grid-caption">Photoshop</figcaption>
      				</figure>
@@ -59,7 +59,7 @@
      					<figcaption class="grid-caption">AfterEffects</figcaption>
      				</figure>
      			</div>
-     			<div class="grid-toolset">
+     			<div class="toolset-grid">
      				<figure class="col-1-7">&nbsp;&nbsp;
      				</figure>
      				<figure class="col-1-7 icon-Premiere">
@@ -80,7 +80,7 @@
      			</div>
 			</section>
 			<section class="content code">
-				<div class="grid-toolset">
+				<div class="toolset-grid">
      				<figure class="col-1-4 icon-html">
      					<figcaption class="grid-caption">HTML</figcaption>
      				</figure>
@@ -94,7 +94,7 @@
      					<figcaption class="grid-caption">jQuery</figcaption>
      				</figure>
      			</div>
-     			<div class="grid-toolset">
+     			<div class="toolset-grid">
      				<figure class="col-1-4">&nbsp;
      				</figure>
      				<figure class="col-1-4 icon-android">
@@ -108,7 +108,7 @@
      			</div>
 			</section>
 			<section class="content fun">
-				<div class="grid-toolset">
+				<div class="toolset-grid">
      				<figure class="col-1-4 icon-music">
      					<figcaption class="grid-caption">Music</figcaption>
      				</figure>
@@ -122,7 +122,7 @@
      					<figcaption class="grid-caption">Volunteering</figcaption>
      				</figure>
      			</div>
-     			<div class="grid-toolset">
+     			<div class="toolset-grid">
      				<figure class="col-1-4">&nbsp;
      				</figure>
      				<figure class="col-1-4 icon-camera">
@@ -136,8 +136,9 @@
      			</div>
 			</section>
 		</div>
-		<div id="work" class="work-grid">
-			<figure class="effect-bubba">
+		<div class="work-grid">
+            <h1 id="work" class="work-titles">work.</h1>
+            <figure class="effect-bubba">
 					<img src="img/mainBack-small.jpg" alt="img06"/>
 					<figcaption>
 						<h3>Fresh <span>Bubba</span></h3>
@@ -178,14 +179,32 @@
 					</figcaption>			
 				</figure>
 		</div>
-		<footer>
-            <div id="closer">
-                <img>
-                
-            </div>
-		</footer>
 	</div>
+    <footer id="bottom" class="bottom">
+            <div class="col-1-4" data-bottom-center="opacity: 0" data-bottom-bottom="opacity: 1">
+                <h1>Alan Kwesi Phillips</h1>
+                <hr noshade width="80%" color="#9f9f9f">
+                <a class="email" href="mailto:alkwphillips@gmail.com">alkwphillips@gmail.com</a>
+                <ul id="social">
+                <li><a class="social-icon" href="http://www.facebook.com/kwesip311" target="_blank"><span class="social-icon-facebook"></span></a></li>
+                <li><a class="social-icon" href="http://www.twitter.com/akayaday" target="_blank"><span class="social-icon-twitter"></span></a></li>
+                <li><a class="social-icon" href="http://instagram.com/akayaday" target="_blank"><span class="social-icon-instagram"></span></a></li>
+                <li><a class="social-icon" href="http://lifeiskwesi.tumblr.com" target="_blank"><span class="social-icon-tumblr"></span></a></li>
+                <li><a class="social-icon" href="http://www.behance.net/kwesip" target="_blank"><span class="social-icon-behance"></span></a></li>
+                <li><a class="social-icon" href="https://www.flickr.com/photos/43838391@N02/" target="_blank"><span class="social-icon-flickr"></span></a></li>
+                <li><a class="social-icon" href="http://www.linkedin.com/pub/alan-kwesi-phillips/2a/1a7/5b9" target="_blank"><span class="social-icon-linkedin"></span></a></li>
+            </ul>
+            </div>
+            <div class="col-1-3">
+                <img src="img/signature.png">
+            </div>
+        </footer>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
 	<script type="text/javascript">
+        skrollr.init({
+        });
+        </script>
+        <script>
       var navigation = responsiveNav(".nav-collapse", {
         animate: true,                    // Boolean: Use CSS3 transitions, true or false
         transition: 284,                  // Integer: Speed of the transition, in milliseconds
