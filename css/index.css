@@ -4,6 +4,12 @@
 
 body {
 	background-color: white;
+	width: 100%;
+	height: 100%;
+}
+#container {
+	width: 100%;
+	min-height: 100%;
 }
 
 h1 {
@@ -32,7 +38,7 @@ header {
 	background-color: rgba(255, 255, 255, 0.97);
 	margin-bottom: 150px;
 	color: black;
-	z-index: 10;
+	z-index: 100;
 	/*-webkit-box-shadow: 0px 10px 40px 30px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 10px 40px 30px rgba(255,255,255,1);
 	box-shadow: 0px 10px 40px 30px rgba(255,255,255,1);*/
@@ -42,18 +48,9 @@ hr {
 	position: fixed;
 	top: 165px;
 	left: 2.5%;
-	height: 1px;
+	border-top: 1px solid #9f9f9f;
 	text-align: center;
 	z-index: 10;
-}
-
-footer hr {
-	position: relative; 
-	top: 0;
-	left: 0;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	text-align: left:;
 }
 
 @media screen and (max-width: 640px) {
@@ -62,12 +59,6 @@ footer hr {
 	}
 }
 
-#container {
-	height: 100%;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
 
 #main-Logo {
 	width: 100px;
@@ -166,7 +157,7 @@ footer hr {
 }
 
 /*   TOOLSET GRID   */
-.toolset-grid, .footer-grid {
+.toolset-grid {
 	position: relative;
 	width: 100%;
 	max-width: 1024px;
@@ -208,7 +199,7 @@ footer hr {
 	position: relative;
 	display: none;
 	color: white;
-	margin: 0;
+	margin: 25px 0 0 0;
 }
 
 .code {
@@ -236,50 +227,56 @@ footer hr {
 
 .work-titles {
 	font-family: Didot, Georgia, serif;
-	font-size: 90px;
+	font-size: 80px;
 	font-weight: 100;
 	font-style: italic;
 	text-align: center;
-	margin: 60px 0 90px 0;
+	margin: 60px 0 0 0;
 	letter-spacing: -5px;
 }
-
-footer {
-	background-image: url('../img/mainBack-footer.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 250px;
-	padding: 0 50px 80px 50px;
+.work-grid hr, .bottom hr {
+	position: relative; 
+	top: 0;
+	left: 0;
+	margin: 0 auto 70px auto;
+	text-align: center;
+	z-index: 4;
+	opacity: 0.5;
+}
+#bottom {
+	padding-bottom: 60px;
+}
+.bottom {
+	padding-bottom: 60px;
+    bottom: 0;
+    width: 100%; 
+    z-index: -1;
 }
 
-footer h1 {font-size: 50px; color: white;}
+.bottom hr {margin-bottom: 20px; }
 
-footer div img {
-	float: right;
-	padding:100px 30px 40px 0px;
-	width: 400px;
+.bottom h1 {font-size: 50px; }
+
+.bottom div img {
+	position: relative;
+	display: block;
+	opacity: 0.2;
+	margin: 40px auto 0 auto;
+	width: 250px;
 
 }
 
-footer div.col-1-4 {
-	border-left: 1px solid #9f9f9f;
-	float: left;
-	text-align: left;
+.contact-info {
+	text-align: center;
+	display: block;
 	font-weight: 200;
-	margin: 80px 0 0 0;
-	padding-left: 5%;
-	padding-right: 50px;
-	width: 45%;
+	margin: 0;
 }
 
-footer div.col-1-3 {
-	float: right;
-}
 
 .email {
-	color: white;
 	font-size: 20px;
-	opacity: 0.6;
+	opacity: 0.3;
 	-webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -288,33 +285,31 @@ footer div.col-1-3 {
 .email:hover {opacity: 1;}
 
 #social {
-	float: left;
-	position: relative;
-	width: 100%;
-	list-style: none;
-	margin-top: 10px;
+	text-align: center;
+    list-style: none;
+    margin: 20px auto 0 auto;
 } 
+
 #social a {
 	opacity: 0.4;
-	float: left;
-	margin-right: 25px;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-#social a:hover {opacity: 1;}
+#social a:hover { opacity: 1; }
 
 #social li {
-	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+    display: inline-block;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .social-icon {
-    color: #fff;
     text-decoration: none;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;

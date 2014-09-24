@@ -1,6 +1,8 @@
 .work-grid {
 	overflow: hidden;
 	width: 100%;
+	height:100%;
+	margin-bottom: 0;
 	list-style: none;
 	text-align: center;
 }
@@ -11,9 +13,9 @@
 	z-index: 1;
 	display: inline-block;
 	overflow: hidden;
-	margin: -0.135em;
-	width: 33.33%;
-	height: 400px;
+	margin: 0.135em;
+	width: 32%;
+	height: 370px;
 	text-align: center;
 	cursor: pointer;
 }
@@ -21,6 +23,7 @@
 .work-grid figure img {
 	position: relative;
 	display: block;
+	min-width: 100%;
 	min-height: 400px;
 	opacity: 0.8;
 }
@@ -28,7 +31,7 @@
 .work-grid figure figcaption {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.25em;
+	font-size: 1.3em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -82,22 +85,22 @@ figure.effect-bubba {
 }
 
 figure.effect-bubba img {
-	opacity: 0.9;
+	opacity: 0.6;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.4;
+	opacity: 0.25;
 }
 
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
-	top: 30px;
-	right: 30px;
-	bottom: 30px;
-	left: 30px;
+	top: 25px;
+	right: 25px;
+	bottom: 25px;
+	left: 25px;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -151,7 +154,7 @@ figure.effect-bubba:hover p {
 
 @media screen and (max-width: 69.5em) {
 	.work-grid figure {
-		width: 50%;
+		width: 40%;
 	}	
 
 	.work-grid figure figcaption {
@@ -164,6 +167,7 @@ figure.effect-bubba:hover p {
 
 	.work-grid figure {
 		width: 100%;
+		height: 400px;
 	}
 }
 
