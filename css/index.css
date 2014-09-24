@@ -48,12 +48,12 @@ hr {
 	position: fixed;
 	top: 165px;
 	left: 2.5%;
-	border-top: 1px solid #9f9f9f;
+	border-top: 1px solid #eaeaea;
 	text-align: center;
 	z-index: 10;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
 	hr {
 		z-index: 7;
 	}
@@ -78,6 +78,16 @@ hr {
 	-webkit-transform: scale(1.05); /* IE 9 */
     -moz-transform: scale(1.05); /* Chrome, Safari, Opera */
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 750px) {
+	#main-Logo {
+		position: absolute;
+		float: none;
+		left: 42%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 #intro-Text {
@@ -108,7 +118,7 @@ hr {
 
 #intro-Text p {
 	position: relative;
-	width: 640px;
+	width: 600px;
 	line-height: 45px;
 	margin-left: auto;
 	margin-right: auto;

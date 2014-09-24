@@ -23,7 +23,7 @@
 }
 
 .nav-collapse.opened {
-  max-height: 9999px;
+  max-height: 100%;
 }
 
 .disable-pointer-events {
@@ -40,7 +40,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 750px) {
   .js .nav-collapse {
     position: relative;
   }
