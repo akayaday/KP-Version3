@@ -4,22 +4,21 @@ $(document).ready(function() {
 	var currentTab = document.getElementById("current-Tab");
 	var intro = document.getElementById("intro-Text");
 	var hello = document.getElementById('hello');
-
-	$(currentTab).html("design");
 	$(".design").css("display", "block");
 
 	
 	// Skills Section Animations & Functions //
 	$("#skills").children().click(function (){
-		$(".icon").css("color", "#d9d9d9");
-		$(".content").css("display", "none");
-
 		var tabType = $(this).attr("data-tab-type");
 		var currentColor = $(this).attr("data-tab-color");
 
-		$(currentTab).html(tabType);
+		$(".icon").removeClass("active");
+		$(".toolset-grid").css("display", "none");
+		$("."+tabType).css("display", "none");
+
 		$("."+tabType).css("display", "block");
-		$(".icon-"+tabType).css("color", currentColor);
+		$(".content").css("background-color", currentColor);
+		$(this).addClass('active');
 	});
 
 });

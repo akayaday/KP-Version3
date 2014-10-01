@@ -68,12 +68,6 @@ section {
   transition: all 0.3s;
 }
 
-@media screen and (max-width: 900px) {
-  .nav-Item {
-    font-size: 14px;
-  }
-}
-
 .nav-collapse,
 .nav-collapse * {
   z-index: 20;
@@ -161,7 +155,7 @@ section {
   }
   .nav-collapse a {
     font-size: 16px;
-    padding: 1.5em;
+    padding: 1em;
     width: 100%;
   }
 }

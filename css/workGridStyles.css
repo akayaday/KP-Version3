@@ -30,7 +30,7 @@
 .work-grid figure figcaption {
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 1.3em;
+	font-size: 1em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
@@ -96,10 +96,10 @@ figure.effect-bubba:hover img {
 figure.effect-bubba figcaption::before,
 figure.effect-bubba figcaption::after {
 	position: absolute;
-	top: 25px;
-	right: 25px;
-	bottom: 25px;
-	left: 25px;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
 	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
