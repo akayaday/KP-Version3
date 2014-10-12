@@ -46,6 +46,10 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+@media screen and (max-width: 750px) {
+[class^="social-icon-"], [class*=" social-icon-"] {
+	font-size: 18px;}
+}
 /* LINE ICON FONTS*/
 
 .icon-fashion:before {

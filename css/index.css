@@ -83,16 +83,6 @@ hr {
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 750px) {
-	#main-Logo {
-		position: absolute;
-		float: none;
-		left: 42%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
 #intro-Text {
 	position: relative;
 	max-width: 1024px;
@@ -126,6 +116,24 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 36px;
+}
+
+@media screen and (max-width: 750px) {
+	#main-Logo {
+		position: absolute;
+		left: 0;
+		right: 0;		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#intro-Text h1 em {font-size: 2.5em;}
+	#intro-Text p {
+		font-size: 24px;
+		width: 400px;
+		line-height: 30px;;
+		padding: 0 20px 0 20px; ;
+	}
 }
 
 .bold {
@@ -291,6 +299,21 @@ hr {
 
 .bottom h1 {font-size: 50px; }
 
+.bottom h3 {
+	font-size: 25px;
+	opacity: 0.35;
+	font-weight: 300;
+	margin-top: 1px;
+}
+
+@media screen and (max-width: 750px) {
+	.bottom h1 {font-size: 30px;}
+	.work-titles {
+		font-size: 50px;
+		letter-spacing: -3px;
+	}
+}
+
 .bottom div img {
 	position: relative;
 	display: block;
@@ -321,7 +344,7 @@ hr {
 #social {
 	text-align: center;
     list-style: none;
-    margin: 20px auto 0 auto;
+    margin: 10px auto 0 auto;
 } 
 
 #social a {
@@ -341,6 +364,11 @@ hr {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+#social li {
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .social-icon {
