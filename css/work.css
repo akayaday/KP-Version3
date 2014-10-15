@@ -1,0 +1,106 @@
+/* -- Work Page Stylings -- */
+
+@media screen and (min-width: 750px) {
+	#work-item {
+		position: relative;
+		margin-top: 170px;
+		margin-left: 110px;
+	}
+
+	.work-title {
+		margin: 0;
+		font-size: 40px;
+	}
+
+	.company {
+		position: relative;
+		float: right;
+		margin-right: 110px;
+		line-height: 2.5em;
+		margin-top: -85px;
+	}
+
+	.company figcaption {
+		font-weight: 300;
+	}
+
+	.company-logo {
+		float: right;
+		width: 120px;
+	}
+
+	.year {
+		text-align: right;
+	}
+
+	.position {
+		margin-top: 10px;	
+		font-weight: 300;
+		font-size: 24px;
+	}
+
+	.work-slider {
+		position: relative;
+	}
+}
+/* @1024px */
+
+@media screen and (max-width: 1024px) {
+	.work-title { font-size: 35px; width: 68%;}
+	.position {font-size: 18px;}
+
+	.company {margin-top: -70px;}
+}
+
+/* @960px */
+
+@media screen and (max-width: 960px) {
+	.work-title{ font-size: 30px;}
+}
+
+/* @750px */
+
+@media screen and (max-width: 750px) {
+	#work-item {
+		position: relative;
+		top: 170px;
+		text-align: center;
+		float: none;
+		width: 100%;
+		margin: 0 10px 0 10px;
+	}
+
+	.work-title { 
+		font-size: 35px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		line-height: 70px;
+		float: none;
+
+	}
+
+	.position {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	.company {
+		margin: 30px 0 30px 0;
+		text-align: center;
+		float: none;
+		font-weight: 200;
+		color: #9f9f9f;
+	}
+
+
+	.company-logo {
+		width: 120px;
+		margin-bottom: 10px;
+		opacity: 0.8;
+	}
+
+
+}
+

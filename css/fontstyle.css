@@ -1,3 +1,17 @@
+/* -- Lato Font -- */
+@font-face {
+ font-family: 'Lato';
+ src: url('fonts/FontName.eot');
+ src: url('fonts/FontName.eot?#iefix') format('embedded-opentype'),
+ url('fonts/FontName-webfont.wofnf') format('woff'),
+ url('fonts/FontName-webfont.ttf') format('truetype'),
+ url('fonts/FontName-webfont.svg#FontName') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+/* -- Icon Fonts -- */
 @font-face {
 	font-family: 'kp-icons';
 	src:url('fonts/kp-icons.eot?lpm3u5');
