@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avea X Mel - Kwesi Phillips</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../css/responsive-nav.css">
+    <link rel="stylesheet" href="../css/navstyles.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/fontstyle.css">
+	<link rel="stylesheet" href="../css/work.css">
+	<!-- Carousel -->
+	<link rel="stylesheet" href="../css/owl.carousel.css">
+	<link rel="stylesheet" href="../css/owl.theme.css">
+	<link rel="stylesheet" href="../css/owl.transitions.css">
+	
+
+	<script type="text/javascript" src="../js/responsive-nav.js"></script>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/smoothscroll.js"></script>
+	<script type="text/javascript">
+	</script>
+	<style>
+
+    </style>
+</head>
+
+<body>
+<div id="container">
+	<header class="nav-bar">
+		<nav class="nav-collapse">
+			<ul>
+				<li><a class="nav-Item smoothScroll" href="#bottom">Contact</a></li>
+				<li><a class="nav-Item smoothScroll" href="#work">Work</a></li>
+				<li><a class="nav-Item" href="../AKP_Resume2014.pdf">R&eacute;sum&eacute;</a></li>
+			</ul>
+		</nav>
+		<a href="http://www.kwesiphillips.com"><img id="main-Logo" alt='Kwesi Phillips - Home' src="../img/anchor.png"/></a>
+	</header>
+	<hr noshade width="94%" color="#9f9f9f">
+	<div id="work-item">
+		<h1 class="work-title">AVEA / MIT Mobile Expereince Lab</h1>
+		<h2 class="position">Undergraduate Researcher</h2>
+		<figure class="company">
+			<img class="company-logo" src="../img/work/Avea.png" />
+			<figcaption class="year">
+				June - August 2013
+			</figcaption>
+		</figure>
+	</div>
+	<div class="customNavigation">
+		<a class="btn prev">←</a>
+		<a class="btn next">→</a>
+	</div>
+	<div id="owl-demo" class="owl-carousel">
+            <div class="item"><img src="../img/grid/ahademo.jpg"></div>
+            <div class="item"><img src="../img/grid/bridgedemo.jpg"></div>
+            <div class="item"><img src="../img/grid/facereel.jpg"></div>
+            <div class="item"><img src="../img/grid/menaha.jpg"></div>
+    </div>
+    <div class="work-details">
+    	<div class="description">
+		During the Summer of 2013, I traveled with the Mobile Experience Lab to Istanbul, Turkey, to work with Avea Telecomm Labs, a long time partner. In order to reach a greater audience, we took up the task of brainstorming, prototyping, and presenting different mobile app ideas to release on their mobile phones. We collaborated directly with the marketing and devleopment teams at Avea in order to fully realize the prototypes, and we performed additional ethnographic research to streamline what would suit the user best.
+		</div>
+		<div class="work-links">
+			<span><a class="full-details" target="_blank" href="http://www.aveamedyamerkezi.com/bulten/mit-nin-arastirma-programi-misti--avea-ile-ilk-defa-turkiye-de.aspx">Full Article</a></span>
+			<p class="work-nav">
+			<span><a>← &nbsp;&nbsp; Previous</a></span>
+			<span><a>Next &nbsp;&nbsp; →</a></span>
+			</p>
+		</div>
+	</div>
+	<div id="bottom" class="bottom">
+        <hr noshade width="25%" color="#9f9f9f">
+            <div class="contact-info">
+                <h1>Alan Kwesi Phillips</h1>
+                <a class="email" href="mailto:alkwphillips@gmail.com">alkwphillips@gmail.com</a>
+                <h3>509.270.5410</h3>
+                <ul id="social">
+                    <li><a class="social-icon social-icon-facebook" href="http://www.facebook.com/kwesip311" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-linkedin" href="http://www.linkedin.com/pub/alan-kwesi-phillips/2a/1a7/5b9" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-twitter" href="http://www.twitter.com/akayaday" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-instagram" href="http://instagram.com/akayaday" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-behance" href="http://www.behance.net/kwesip" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-flickr" href="https://www.flickr.com/photos/43838391@N02/" target="_blank"></a></li>
+                    <li><a class="social-icon social-icon-tumblr" href="http://lifeiskwesi.tumblr.com" target="_blank"></a></li>
+                </ul>
+            </div>
+            <div class="sig">
+                <img src="../img/signature-black.png">
+            </div>
+        </div>   
+	</div>
+</div>
+ <script src="../js/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo");
+
+      owl.owlCarousel({
+      	autoHeight: true,
+        singleItem : true,
+        transitionStyle : "fade"
+      });
+
+      $(".next").click(function(){
+    	owl.trigger('owl.next');
+  		})
+ 	  $(".prev").click(function(){
+    	owl.trigger('owl.prev'); })
+
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+	});
+	</script>
+</body>
+</html>
