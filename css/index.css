@@ -1,5 +1,5 @@
 * {
-	font-family: Lato, Helvetica, sans-serif;
+	font-family: 'Lato', Helvetica, sans-serif;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
@@ -8,11 +8,9 @@
 body {
 	background-color: white;
 	width: 100%;
-	max-height: 100%;
 }
 #container {
 	width: 100%;
-	min-height: 100%;
 }
 
 h1 {
@@ -97,13 +95,12 @@ hr {
 }
 
 #intro-Text h1 {
-	margin-left: 35px;
 	margin-bottom: 10px;
 }
 
 #intro-Text h1 em {
 	position: relative;
-	font-family: Didot, Georgia, serif;
+	font-family: 'Didot', Georgia, serif;
 	letter-spacing: -5px;
 	text-align: center;
 	font-size: 4.0em;
@@ -132,8 +129,8 @@ hr {
 	#intro-Text p {
 		font-size: 24px;
 		width: 400px;
-		line-height: 30px;;
-		padding: 0 20px 0 20px; ;
+		line-height: 30px;
+		margin: 0 auto 0 auto;
 	}
 }
 
@@ -176,6 +173,12 @@ hr {
 #skills a {
 	margin-left: 50px;
 	margin-right: 50px;
+}
+
+@media screen and (max-width: 750px) {
+	#skills a {
+		margin: 0 50px 0 50px;
+	}
 }
 
 .tab-Title {
@@ -298,7 +301,7 @@ hr {
 
 .bottom hr {margin-bottom: 20px; }
 
-.bottom h1 {font-size: 50px; }
+.bottom h1 {font-size: 40px; }
 
 .bottom h3 {
 	font-size: 20px;
@@ -345,7 +348,7 @@ hr {
 #social {
 	text-align: center;
     list-style: none;
-    margin: 10px auto 0 auto;
+    margin: 20px auto 0 auto;
 } 
 
 #social a {
@@ -359,8 +362,6 @@ hr {
 #social a:hover { opacity: 1; }
 
 #social li {
-	margin-left: 15px;
-	margin-right: 15px;
     display: inline-block;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -368,8 +369,8 @@ hr {
 }
 
 #social li {
-	margin-left: 7px;
-	margin-right: 7px;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .social-icon {

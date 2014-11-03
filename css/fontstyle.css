@@ -1,11 +1,11 @@
 /* -- Lato Font -- */
 @font-face {
  font-family: 'Lato';
- src: url('fonts/FontName.eot');
- src: url('fonts/FontName.eot?#iefix') format('embedded-opentype'),
- url('fonts/FontName-webfont.wofnf') format('woff'),
- url('fonts/FontName-webfont.ttf') format('truetype'),
- url('fonts/FontName-webfont.svg#FontName') format('svg');
+ src: url('fonts/Lato.eot');
+ src: url('fonts/Lato.eot?#iefix') format('embedded-opentype'),
+ url('fonts/Lato.wofnf') format('woff'),
+ url('fonts/Lato.ttf') format('truetype'),
+ url('fonts/Lato.svg#FontName') format('svg');
  font-weight: normal;
  font-style: normal;
 }
@@ -61,9 +61,15 @@
 }
 
 @media screen and (max-width: 750px) {
-[class^="social-icon-"], [class*=" social-icon-"] {
-	font-size: 18px;}
+[class^="social-icon-"], [class*=" social-icon-"] 
+	{
+	font-size: 20px;
+	}
+[class^="icon-"], [class*=" icon-"] {
+	font-size: 50px;
 }
+}
+
 /* LINE ICON FONTS*/
 
 .icon-fashion:before {
