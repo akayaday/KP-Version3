@@ -5,6 +5,9 @@
 	font-weight: 800;
 }
 
+.work-nav span a:hover {
+	color: #eeb301;
+}
 @media screen and (min-width: 750px) {
 	#work-item {
 		position: relative;
@@ -48,9 +51,11 @@
 	}
 
 	.work-details {
+		clear: both;
 		width: 100%;
 		height: 200px;
-		margin-bottom: 40px;
+		position: relative;
+		margin-bottom: 130px;
 	}
 
 	.description {
@@ -60,12 +65,14 @@
 		margin-left: 110px;
 		padding-right: 50px;
 		width: 45%;
+		height: 200px;
 		border-right: 1px solid #ccc;
 	}
 
 	.work-links {
 		float: right;
 		width: 35%;
+		
 	}
 
 	.full-details {
@@ -75,10 +82,11 @@
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		font-size: 16px;
+		line-height: 3em;
 		padding: 10px 15px;
 		border: 1px solid transparent;
 		border-bottom: 1px solid #e9e9e9;
-		margin: 0 auto 10px auto;
+		margin: 0 30px 10px 0;
 	}
 
 	.full-details:hover {
@@ -143,6 +151,10 @@
 		color: #eeb301;
     	font-weight: 400;
     	/*border: 1px solid black;*/
+	}
+
+	.work-bottom {
+		margin-top: 20px;
 	}
 }
 /* @1024px */
@@ -211,8 +223,10 @@
 	}
 
 	.work-links {
+		position: relative;
 		float: none;
 		text-align: center;
+		margin-bottom: 40px;
 	}
 
 	.description {
@@ -231,7 +245,8 @@
 		text-transform: uppercase;
 		font-size: 16px;
 		padding: 10px 15px;
-		color: #eeb301;
+		color: #eeb301;	
+		line-height: 4em;
 		border: 1px solid #000;
 	}
 
