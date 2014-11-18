@@ -1,5 +1,5 @@
 /* -- Lato Font -- */
-@font-face {
+/*@font-face {
  font-family: 'Lato';
  src: url('fonts/Lato.eot');
  src: url('fonts/Lato.eot?#iefix') format('embedded-opentype'),
@@ -9,7 +9,7 @@
  font-weight: normal;
  font-style: normal;
 }
-
+*/
 
 /* -- Icon Fonts -- */
 @font-face {
